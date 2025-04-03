@@ -1,0 +1,156 @@
+body
+{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-blend-mode:darken;
+    background-color: rgba(0 ,0 ,0 ,0.5);
+    padding:0;
+    overflow-x: hidden;
+    margin:0;
+}
+
+.sendMoney
+{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    text-align: center;
+}
+
+.section
+{
+    box-shadow: 0 0 20px rgb(127, 0, 255);
+    background-color:hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+
+}
+
+.registration
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+}
+
+@media screen and (max-width:430px){
+    .section
+    {
+        width: 350px;
+        justify-content:center;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+.text
+{
+    display: flex;
+    text-align: center;
+ justify-content: center;
+    font-size: 60px;
+    color:rgb(4, 255, 0);
+
+}
+
+.fname
+{
+    display: flex;
+    align-self: center;
+    border: none;
+    padding: auto;
+    margin: auto;
+}
+
+text:focus, input:focus
+{
+    color:white;
+}
+
+#Fname
+{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.Lname
+{
+    display: flex;
+    align-self: center;
+    border: none;
+    padding: auto;
+    margin: auto;
+}
+
+#lname
+{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+::placeholder
+{
+    color:white;
+    font-weight: 600;
+}
+
+.mail
+{
+    display: flex;
+    align-self: center;
+    border: none;
+    padding: auto;
+    margin: auto;
+}
+
+
+
+#Mail
+{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.button
+{
+    transform: translateX(50%);
+    padding:10px 18px;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.button:hover
+{
+    background-color:#1e1e1e;
+    color:255,255,255;
+    transition: ease-in 0.3s;
+    border: none;
+    box-shadow: 0 0 15px 10px  rgb(127, 0, 255) ;
+}
+.checkbox
+   {
+   display: flex;
+   font-size: large;
+
+   } 

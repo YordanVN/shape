@@ -1,0 +1,91 @@
+
+/* местоположение на картичката */
+  .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap:20px;
+    margin-top: 50px;
+}  
+@media screen and (max-width:1670px){
+    .card-container{
+    flex-wrap: wrap;
+    }
+}
+
+/* картичките с видовете тренировки */
+.card{
+    width:460px;
+    height:auto;
+    background: hsl(0 0% 100% / 0.1);
+	backdrop-filter: blur(7px);
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px 1px black;
+    overflow:  hidden;
+    transition:transform 0.6s ease;
+}
+
+@media screen and (max-width:484px){
+
+    .card{
+        height: 100%;
+
+    }
+    
+}   
+
+
+/* местене на картичката при хавър */
+.card:hover{
+    transform: translateY(-20px);
+}
+
+/*  съдържанието в картичката */
+.card-content{
+    padding: 20px;
+}
+
+/* по-големият надпис */
+.card-content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:rgb(241, 68, 111);
+}
+
+/* информацията */
+.card-content p{
+    font-size: 20px;
+    color:white;
+    margin-bottom: 25px;
+}
+
+
+/* снимката на картичката */
+.card img{
+    width: 100%;
+    height:40%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-button{
+    position: absolute;
+    bottom: 10px;
+    background-color:aqua;
+    text-decoration: none;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    padding:8px 16px;
+    cursor: pointer;
+}
+
+
+/* надписът над страницата с картички */
+.InfoText{
+    text-align: center;
+    font-size: xx-large;
+    font-family:cursive , 'Times New Roman';
+    color:rgb(255, 255, 255);
+}

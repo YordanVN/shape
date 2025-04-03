@@ -1,0 +1,40 @@
+.businessCard
+{
+    text-align: center;
+    justify-content: center;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    padding: auto;
+    width: 500px;
+    height: max-content;
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:510px)
+{
+    .businessCard
+    {
+        text-align: start;
+        justify-content: start;
+        width: fit-content;
+    }
+}
+
+.compear
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+h1
+{
+    text-align: center;
+    color:white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
